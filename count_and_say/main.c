@@ -16,7 +16,7 @@ char* countAndSay(int n) {
     
     char *result = 0;
     
-    int resultLength = 0;
+    int resultLength = 1;
     
     for(i=0;i<strLength;){
         
@@ -32,14 +32,11 @@ char* countAndSay(int n) {
         
         result = realloc(result,sizeof(char)*resultLength);
         
-        result[resultLength-2] = count+'0';
-        result[resultLength-1] = c;
+        result[resultLength-3] = count+'0';
+        result[resultLength-2] = c;
         
     }
     
-    resultLength++;
-    
-    result = realloc(result,sizeof(char)*resultLength);
     
     result[resultLength-1] = 0;
     
