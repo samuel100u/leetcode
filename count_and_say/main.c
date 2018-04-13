@@ -36,12 +36,10 @@ char* countAndSay(int n) {
         result[resultLength-2] = c;
         
     }
-    
-    
+  
     result[resultLength-1] = 0;
     
     free(s);
     
     return result;
-    
 }
